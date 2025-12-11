@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Army Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+    body {
+      background: #f4f6f8;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #0d2b60;
+      color: white;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      background: white;
+      color: #0d2b60;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 90vh;
+      background: url("army1.jpg") no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: white;
+      transition: background-image 1s ease-in-out;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      transition: transform 0.4s;
+    }
+
+    .hero-content:hover {
+      transform: scale(1.05);
+    }
+
+    .shield {
+      font-size: 45px;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin: 10px 0;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 80px;
+      background: white;
+      margin: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #0d2b60;
+    }
+
+    section p {
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    section p:hover {
+      color: black;
+      transform: translateX(5px);
+      transition: 0.3s;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #f2f2f2;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      background: white;
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    .hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: armySlider 9s infinite ease-in-out;
+}
+
+/* Image slider animation */
+@keyframes armySlider {
+  0% {
+    background-image: url("army.jfif");
+  }
+  33% {
+    background-image: url("army2.jfif");
+  }
+  66% {
+    background-image: url("army3.jfif");
+  }
+  100% {
+    background-image: url("army4.jfif");
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Indian Army</h2>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#history">History</a>
+    <a href="#roles">Roles</a>
+    <a href="#weapons">Weapons</a>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="hero" id="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <div class="shield">🛡️</div>
+    <h1>Indian Army</h1>
+    <p>Service Before Self</p>
+  </div>
+</div>
+
+<!-- HISTORY SECTION -->
+<section id="history">
+  <h2>History of Indian Army</h2>
+  <p>The Indian Army started from the East India Company’s army.</p>
+  <p>In 1947, after independence, it became the national army.</p>
+  <p>It has fought major wars in 1947, 1962, 1965, 1971 and 1999.</p>
+  <p>The history of the Indian Army is very old and proud. It started during the 
+    time of the East India Company in the 1600s, when the British formed Indian soldiers
+     to protect their trade.</p>
+  <p> After India became independent in 1947, the Indian Army became the national army
+      of India. Since then, it has fought several important wars to protect the country,
+       including wars in 1947-48, 1962, 1965, 1971, and 1999.</p>
+   <p>The Indian Army has a rich heritage of bravery and sacrifice, with many soldiers
+    receiving prestigious awards for their courage in battle.</p>
+    <p>The motto of the Indian Army is "Service Before Self," reflecting their dedication
+     to the nation above all else.</p>
+     <p>Later, the Indian Army fought important wars in:
+        <br> 1962 – War with China
+         1965 – Second war with Pakistan<br>
+         1971 – War that led to the creation of Bangladesh<br>
+         1999 – Kargil War</p>
+    <p>Today, the Indian Army is one of the largest and most respected armies in the world,
+     known for its professionalism and commitment to defending India.</p>
+</section>
+
+<!-- ROLES SECTION -->
+<section id="roles">
+  <h2>Roles & Responsibilities</h2>
+  <div class="cards">
+    <div class="card">Protecting India's borders</div>
+    <div class="card">Maintaining internal security</div>
+    <div class="card">Counter-terrorism operations</div>
+    <div class="card">Helping during natural disasters</div>
+  </div>
+</section>
+
+<!-- REGIMENTS -->
+<section>
+  <h2>Famous Regiments</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="rajput regiment.jfif" alt="Rajput Regiment">
+      <p>Rajput Regiment</p>
+    </div>
+
+    <div class="card">
+      <img src="gorkha rifles.jfif" alt="Gorkha Rifles">
+      <p>Gorkha Rifles</p>
+    </div>
+
+    <div class="card">
+      <img src="sikh regiment.jfif" alt="Sikh Regiment">
+      <p>Sikh Regiment</p>
+    </div>
+
+    <div class="card">
+      <img src="para sf.jfif" alt="Para SF">
+      <p>Parachute Regiment (Para SF)</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- WEAPONS SECTION -->
+ <section id="weapons">
+  <h2>Major Weapons & Equipment</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="T-90  bhisma tank.jfif" alt="T-90 bhisma tank">
+      <p>T-90 Bhishma Tank</p>
+    </div>
+
+    <div class="card">
+      <img src="Arjun main battle tank.jfif" alt="Arjun main battle tank">
+      <p>Arjun Main Battle Tank</p>
+    </div>
+
+    <div class="card">
+      <img src="dhanush howitzer.jfif" alt="dhanush howitzer">
+      <p>Dhanush Howitzer</p>
+    </div>
+
+    <div class="card">
+      <img src="pinaka rocket launcher.jfif" alt="Pinaka rocket launcher">
+      <p>Pinaka Rocket Launcher</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<section style="text-align:center; background:#0d2b60; color:white;">
+  <p>© 2025 Indian Army Project | Created by Student</p>
+</section>
+
+
+</body>
+</html>
